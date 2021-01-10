@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device width, initial-scale=1.0"/>
+        <title>:sort:</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" media="screen, handheld" />
+        <link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+<!-- logo -->
+            <div class="logo-1">
+                <img src="img mobile/Logo-1.svg" alt="">
+                <h1><span class="redlogo">:</span>sort<span class="redlogo">:</span></h1>
+            </div>
+            <!-- nawigacja -->
+            <div class="wrapper">
+                <nav class="mobilenav">
+                    <div>
+                        <img src="img mobile/Logo-2.svg" alt="" class="logo-2">
+                    </div>
+                    <div class="slideup">
+                        <img src="img mobile/Logo-3.svg" alt="" class="logo-3">
+                        <img src="img mobile/Menuslide.svg" alt="" class="menuslide">
+                        <div class="m-menu-items">
+                            <ul>
+                                <li>
+                                    <a href="#IV" class="list-items" id="buy">Buy</a>
+                                </li>
+                                <li>
+                                    <a href="#III" class="list-items">Platforms</a>
+                                </li>
+                                <li>
+                                    <a href="#II" class="list-items">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#V" class="list-items">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+<!-- I -->
+            <div class="I">
+                <div class="I_txt">
+                <h2>A PERSONAL DATABASE</h2>
+                <p>which will help you organize... everything.</p>
+                </div>
+                <img class="I_img" src="img mobile/I.svg" alt="">
+            </div>
+        </header> 
+
+        <main>
+            <section>
+                <img id="II" class="II_img" src="img mobile/II.svg" alt="">
+                <div class="II_txt">
+                <h2>Safe and Secure</h2>
+                <small>We know your privacy matters.<br>No third-party company will have access to Your data.</small>
+                </div>
+            </section>
+            <section>
+                <img id="III" class="III_img" src="img mobile/III.svg" alt="">
+                <div class="III_txt">
+                <h2>Aviable for:</h2>
+                </div>
+            </section>
+            <section class="IV">
+                <div class="IV_txt">
+                <h2 id="IV">Choose Your Plan</h2>        
+                </div>
+                <img src="img mobile/IV_icon.svg" alt="" id="icon">
+                <div id="V" class="plan-wrapper">
+                    <div class="card">
+                        <img src="img mobile/IV_a.svg" alt="" class="IV_a">
+                        <button class="buy" id="try">Try now</button>
+                    </div>
+                    <div class="card">
+                        <img src="img mobile/IV_b.svg" alt="" class="IV_b">
+                        <button class="buy">Buy</button>
+                    </div>
+                    <div class="card">
+                        <img src="img mobile/IV_c.svg" alt="" class="IV_c">
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <img class="V_img" src="img mobile/V.svg" alt="">
+                <div class="Va_txt">
+                <small>:sort: Mateusz Jakobsche<br>Poland, Bielsko-Biała</small>
+                </div>
+                <div class="Vb_txt">
+                <small>Laaunair@protonmail.com<br><a href="tel:+18005550199">1-800-555-0199</a></small>
+                </div>
+            </section>
+        </main>
+
+        <footer>        
+        </footer>
+        <script>
+            const logo2 = document.querySelector(".logo-2");
+            const logo3 = document.querySelector(".logo-3");
+            const slideup = document.querySelector(".slideup");
+            const mmenuitems = document.querySelectorAll(".slideup .m-menu-items li");
+            logo2.addEventListener("click", () => {
+                slideup.classList.toggle("active");
+            });
+            logo3.addEventListener("click", () => {
+                slideup.classList.toggle("active");
+            });
+            mmenuitems.forEach((i) => { i.addEventListener("click", () => {
+                slideup.classList.remove("active");
+                });
+            });
+            
+        </script>
+    </body>
+</html>
